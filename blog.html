@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>My University</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3f8b3ca9d0.js" crossorigin="anonymous"></script>
+    
+</head>
+<>
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"> <img src="logo.png"> </a>
+          <div class="nav-link" id="navlinks">
+            <i class="fa fa-times" onclick="hideManu()"></i>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contract.html">CONTRACT</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showManu() "></i>
+          
+        </nav>
+     <h1>Our Certificate & Online Programs For 2021</h1>
+     </section>
+     <!--blog page content-->
+     <section class="blog-content">
+         <div class="row">
+             <div class="blog-left">
+              <img src="certificate.jpg" >
+              <h2>This  IS Our Certificate</h2>
+              <p>GUB offers students from all walks of life the advantages of an affordable,
+                   personalized education of global <br> standard. As a modern, dynamic,
+                    and innovative institution for undergraduate and graduate students, </p>
+                    <p> GUB lays stress on quality education imparted by a galaxy of highly qualified, 
+                        dynamic, dedicated, and well-experienced faculty members with global exposure.</p>
+                        <p>GUB’s greatest resource in fulfilling its mission is its faculty
+                             of about 300 distinguished scholars and educators, whose scholarly
+                              research experiences and teaching skills enrich the students’ 
+                              classroom environment. To ensure quality education, GUB is equipped with 
+                              modern infrastructural facilities, latest academic curricula, Internet with
+                               Wi-Fi facility, air-conditioned classrooms, and seminar halls supported with 
+                               multi-media, rich libraries, most sophisticated laboratories, students'
+                                cafeterias, standby generators, etc. The students of GUB experience 
+                                a vibrant university community with a diverse range of academic 
+                                offerings and about 6,500 participating students</p>
+
+
+                                <div class="comment-box">
+                                    <h3>Leave a comment</h3>
+                                    <form class="comment-form">
+                                        <input type="text"  placeholder="Enter Name">
+                                        <input type="email"  placeholder="Enter Email">
+                                        <textarea  rows="5" placeholder="Your Comment"></textarea>
+                                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+
+                                    </form>
+                                </div>
+             </div>
+             <div class="blog-right">
+                 <h3>Post Categroies</h3>
+                 <div>
+                     <span>Business Analytics</span>
+                     <span>21</span>
+                 </div>
+                 <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Algorithm</span>
+                    <span>32</span>
+                </div>
+                <div>
+                    <span>Web Programming</span>
+                    <span>41</span>
+                </div>
+                <div>
+                    <span>AutoCad</span>
+                    <span>33</span>
+                </div>
+                <div>
+                    <span>Android Development</span>
+                    <span>49</span>
+                </div>
+             </div>
+         </div>
+
+     </section>
+    
+    
+  
+
+
+     <!--Footer-->
+     <section class="footer">
+         <h4>About Us </h4>
+         <p>As a modern, dynamic, and innovative institution for undergraduate and graduate students, 
+          GUB lays stress on <br> quality education imparted by a galaxy of highly qualified, dynamic,</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+
+            </div>
+            <p>Made By Robin</p>
+    
+
+
+
+
+    <!----JavaScript for manu and cross---->
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showManu(){
+            navlinks.style.right = "0";
+        }
+        function hideManu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

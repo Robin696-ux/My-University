@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>My University</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3f8b3ca9d0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"> <img src="logo.png"> </a>
+          <div class="nav-link" id="navlinks">
+            <i class="fa fa-times" onclick="hideManu()"></i>
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="course.html">COURSE</a></li>
+                  <li><a href="blog.html">BLOG</a></li>
+                  <li><a href="contract.html">CONTRACT</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showManu() "></i>
+         
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+   
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.8900481372734!2d90.37524941402384!3d23.786929393298948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c73585cef5e5%3A0xcb6b7d1a6c0e8ed3!2sGreen%20University%20of%20Bangladesh!5e0!3m2!1sen!2sbd!4v1632849237138!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+ 
+
+        </section>
+     <section class="contact-us">
+         <div class="row">
+             <div class="contact-col">
+                 <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>  Shewrapara,Mirpur,Dhaka 1200</h5>
+                        <p>The off is evrey saturday</p>
+                    </span>
+                   
+                 </div>
+                 <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                       
+                        <h5> +9655455</h5>
+                        <p>Sunday to Friday, 10AM to 9PM</p>
+                    </span>
+                   
+                 </div>
+                 <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                      
+                        <h5>  mdrobin.rrrr@gmail.com</h5>
+                        <p>Email to any query</p>
+                    </span>
+                    
+                 </div>
+             </div>
+             <div class="contact-col">
+              <form action="form-handaler.php" method="POST">
+                  <input type="text" name="name" placeholder="Enter Your Name" required>
+                  <input type="email" name="email" placeholder="Enter Your Email" required>
+                  <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                  <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                  <button type="submit" class="hero-btn red-btn">Send Message</button>
+              </form>
+
+             </div>
+         </div>
+
+     </section>
+  
+
+
+     <!--Footer-->
+     <section class="footer">
+         <h4>About Us</h4>
+         <p>As a modern, dynamic, and innovative institution for undergraduate and graduate students, 
+          GUB lays stress on <br> quality education imparted by a galaxy of highly qualified, dynamic,</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+
+            </div>
+            <p>Made By Robin</p>
+     </section>
+
+
+
+    <!----JavaScript for manu and cross---->
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showManu(){
+            navlinks.style.right = "0";
+        }
+        function hideManu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

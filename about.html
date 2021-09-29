@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>My University</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3f8b3ca9d0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"> <img src="logo.png"> </a>
+          <div class="nav-link" id="navlinks">
+            <i class="fa fa-times" onclick="hideManu()"></i>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contract.html">CONTRACT</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showManu() "></i>
+          
+        </nav>
+     <h1>About Us</h1>
+    </section>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+            <h1>One of The Best Private University in Bangladesh</h1>
+            <p>Green University of Bangladesh (GUB), one of the leading
+                 private universities in Bangladesh, was founded in 2003 under
+                  the Private University Act 1992 with a vision to create a global
+                   higher education center of excellence</p>
+                   <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="about.jpg" >
+            </div>
+        </div>
+
+    </section>
+   
+
+ 
+  
+
+
+     <!--Footer-->
+     <section class="footer">
+         <h4>About Us</h4>
+         <p>As a modern, dynamic, and innovative institution for undergraduate and graduate students, 
+          GUB lays stress on <br> quality education imparted by a galaxy of highly qualified, dynamic,</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+
+            </div>
+            <p>Made By Robin</p>
+     </section>
+
+
+
+    <!----JavaScript for manu and cross---->
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showManu(){
+            navlinks.style.right = "0";
+        }
+        function hideManu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
